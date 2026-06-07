@@ -1,0 +1,8 @@
+{
+  "name": "noam-delhi-guide",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "npx -y pagefind --site public --output-path public/pagefind"
+  }
+}
