@@ -3,5 +3,9 @@
   "buildCommand": "npm run build",
   "outputDirectory": "public",
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/", "destination": "/india/delhi", "permanent": false },
+    { "source": "/india", "destination": "/india/delhi", "permanent": false }
+  ]
 }
