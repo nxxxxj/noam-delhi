@@ -3,6 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
 <title>Neighbourhoods to Walk Through — NOAM Delhi</title>
 <meta name="description" content="Five Delhi neighbourhoods worth walking — Nizamuddin Basti, Old Delhi’s lanes, Hauz Khas, Lodhi Art District and Shahpur Jat — from a local who walks them.">
 <link rel="canonical" href="https://notonamap.com/india/delhi/neighbourhoods">
@@ -121,6 +126,8 @@ a{color:inherit;text-decoration:none;}
 
 /* === SEARCH: inline in the breadcrumb row, right edge = column right edge; 25x25 icon === */
 .crumb{display:flex;align-items:center;}
+.crumb-bar{position:sticky;top:0;z-index:50;background:#fff;padding:8px 0;}
+
 .crumb-trail{flex:1 1 auto;}
 .search-zone{position:relative;flex:0 0 auto;width:25px;height:25px;}
 .search-ic{position:absolute;right:0;top:50%;transform:translateY(-50%);
@@ -199,10 +206,10 @@ u{text-underline-offset:3px;}
 <body>
 
 <div class="header" id="top">
-  <div class="logo-wrap"><img class="logo-img" src="/images/NOAM_Logo.webp" alt="NOAM — Not On A Map"></div>
+  <div class="logo-wrap"><a href="/india/delhi"><img class="logo-img" src="/images/NOAM_Logo.webp" alt="NOAM — Not On A Map"></a></div>
 </div>
 
-<div class="crumb">
+<div class="crumb-bar"><div class="crumb">
   <span class="crumb-trail"><a href="/india">India</a> <span class="arr">&gt;</span> <a href="/india/delhi">Delhi</a> <span class="arr">&gt;</span> <a href="/india/delhi/why-visit-delhi">Good Reasons to Visit Delhi</a> <span class="arr">&gt;</span></span>
   <span class="search-zone">
     <button class="search-ic" id="searchBtn" aria-label="Search"><img src="/images/SearchIcon.webp" alt=""></button>
@@ -211,6 +218,7 @@ u{text-underline-offset:3px;}
       <span class="go" id="searchGo" role="button" aria-label="Go"><img src="/images/SearchIcon.webp" alt=""></span>
     </span>
   </span>
+</div>
 </div>
 
 <div class="band">
